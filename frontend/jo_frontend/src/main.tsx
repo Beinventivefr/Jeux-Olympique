@@ -6,10 +6,10 @@ import {
     Outlet,
     RouterProvider}
 from "react-router-dom";
-import App from './App'
+
 
 import './index.css'
-import './assets/css/home.css'
+import './assets/css/Home.css'
 import './assets/css/Navbar.css'
 import './assets/css/Login.css'
 
@@ -17,7 +17,7 @@ import './assets/css/Login.css'
 import TokenContextProvider from "./context/TokenContextProvider";
 
 //Navbar Page
-import PageNavbar from "./page/NavBarPage";
+import NavbarPage from "./page/NavBarPage";
 
 //Page
 import Home from "./page/Home"
@@ -28,7 +28,7 @@ import ProductForm from "./page/ProductForm";
 const HeaderLayout = () => (
     <>
         <header>
-            <PageNavbar />
+            <NavbarPage />
         </header>
         <Outlet />
     </>
